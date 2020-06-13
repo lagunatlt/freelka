@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #EAEDF0;
+}
+.container {
+	max-width: 1030px;
+	margin: 0 auto;
+}
+.header {
+	background-color: #89B0C0;
+	color: #fff;
+	/* height: 50px; */
+}
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	
+}
+.header__logo {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.logo__ferst {
+	font-family: 'Didact Gothic', sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 13px;
+	user-select: none;
+}
+.logo__second {
+	font-family: 'Trade Winds',	cursive;
+	font-size: 28px;
+	line-height: 30px;
+	user-select: none;
+}
+.header__user {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.balanse {
+	font-size: 24px;
+	margin-right: 17px;
+	cursor: pointer;
+	font-family: 'Fira Code', monospace;
+	font-weight: 300;
+	letter-spacing: -2px;
+}
+.balanse .fa-rub {
+	font-size: 21px;
+	margin-left: 5px;
+}
+
+.user__message {
+	position: relative;
+	width: 24px;
+	height: 25px;
+	background-image: url('/img/user-mess.svg');
+	background-size: 24px;
+	background-repeat: no-repeat;
+	margin-right: 17px;
+	cursor: pointer;
+}
+.user-message__icon,
+.user-nofity__icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+.mess-icon__red {
+	border: 1px solid #fff;
+	background-color: red;
+}
+.mess-icon__green {
+	border: 1px solid #fff;
+	background-color: green;
+}
+.user__nofity {
+	position: relative;
+	background-image: url('/img/user-nofity.svg');
+	width: 19px;
+	height: 22px;
+	background-size: 19px;
+	background-repeat: no-repeat;
+	margin-right: 17px;
+	cursor: pointer;
+}
+.user__menu {
+	background-image: url('/img/user.png');
+	width: 40px;
+	height: 40px;
+	background-size: 40px;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	background-position: center;
+	cursor: pointer;
+}
+
+nav {
+	background-color: #fff;
+	height: 30px;
+}
