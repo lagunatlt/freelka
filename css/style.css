@@ -3,6 +3,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html {
+	font-family: 'Roboto', sans-serif;
+}
 body {
 	background-color: #EAEDF0;
 }
@@ -10,10 +13,11 @@ body {
 	max-width: 1030px;
 	margin: 0 auto;
 }
+
+/* ------Header------ */
 .header {
 	background-color: #89B0C0;
 	color: #fff;
-	/* height: 50px; */
 }
 .header__inner {
 	display: flex;
@@ -53,10 +57,12 @@ body {
 	font-family: 'Fira Code', monospace;
 	font-weight: 300;
 	letter-spacing: -2px;
+	user-select: none;
 }
 .balanse .fa-rub {
 	font-size: 21px;
 	margin-left: 5px;
+	user-select: none;
 }
 
 .user__message {
@@ -112,4 +118,97 @@ body {
 nav {
 	background-color: #fff;
 	height: 30px;
+	margin-bottom: 15px;
+}
+.nav__inner {
+	padding-left: 295px;
+}
+.nav__link {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: #89B0C0;
+	font-weight: 500;
+	font-size: 18px;
+	padding-right: 30px;
+	line-height: 30px;
+}
+.nav__link:last-child {
+	padding-right: 0;
+}
+.nav__link:hover {
+	color: #34738D;
+}
+.nav__active {
+	color: #34738D;
+}
+
+
+/* -----end Header----- */
+
+/* ---aside---- */
+aside {
+	width: 260px;
+	border: 1px solid #89B0C0;
+	border-radius: 3px;
+}
+
+.aside__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sidebar__header-title {
+	color: #222222;
+	font-size: 14px;
+	font-weight: 400;
+}
+.aside__header .fa {
+	color: #89B0C0;
+}
+.top .sidebar__header-title {
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 500;
+}
+.top .fa {
+	color: #FFF;
+}
+
+.aside__header {
+	height: 48px;
+	padding: 0 16px;
+	border-bottom: 1px solid #89B0C0;
+}
+
+.aside__header-wrap:first-child .aside__header {
+	background-color: #89B0C0;
+}
+
+.sort-items {
+	padding: 12px 30px;
+	background-color: #fff;
+}
+
+.aside__header-wrap:last-child .sort-items {
+	border-radius: 0 0 3px 3px;
+}
+.reset-sort {
+	display: block;
+	color: #DB4646;
+	font-size: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.sort-item {
+	display: flex;
+	align-items: center;
+	color: #35464E;
+	font-size: 13px;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+.sort-item__name,
+.sort-item__current {
+	padding-left: 5px;
 }
